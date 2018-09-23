@@ -20,7 +20,7 @@ function format(seconds) {
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.status(200).json({
-    op:"HELLO WORKSHOP",
+    op:"HELLO WORKSHOP V:1.0.1",
     env: config.env,
     uptime: format(process.uptime()),
     networkInterfaces: ifaces
