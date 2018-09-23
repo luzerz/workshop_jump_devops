@@ -24,5 +24,5 @@ jobs:
                 cp Dockerfile.production  Dockerfile
                 docker build -t luzerz/example-nodejs-circle:latest .
                 docker build -t luzerz/example-nodejs-circle:${CIRCLE_SHA1} .
-                docker push luzerz/example-nodeks-circle:latest
+                docker push luzerz/example-nodejs-circle:latest
       - run: echo Done
