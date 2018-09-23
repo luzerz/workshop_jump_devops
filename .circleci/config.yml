@@ -115,7 +115,7 @@ workflows:
             - build
             - test
       - deploy:
-          #type: approval
+          type: approval
           requires:
             - build
             - test
